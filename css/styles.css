@@ -1,0 +1,106 @@
+/* Import Font-Family */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap');
+
+/* Reset styles default navigator */
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.body {
+    background-color: #000;
+}
+
+.row,
+.col-sm-12 {
+    padding: 0% !important;
+}
+
+/* Section header */
+.my-sm {
+    margin: 30px 0px;
+    padding: 2px !important;
+}
+
+.bg-navbar {
+    background-color: #2c2d30;
+}
+
+.logo {
+    font-size: 36px;
+}
+
+.text-white {
+    color: #fafafa !important;
+}
+
+.text-justify {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+.h2 {
+    font-weight: 700;
+}
+
+.nav-item:hover {
+    padding: 6px 12px;
+    background-color: #fafafa;
+    transition: all 0.8s ease;
+}
+
+.nav-link:hover {
+    color: rgb(180, 16, 98) !important;
+    transition: all 0.8s ease;
+}
+
+.rounded-circle {
+    border-radius: 50% !important;
+    width: 100%;
+    padding: 0%;
+}
+
+.mt-sm-5 {
+    margin: 30px 0px 24px;
+}
+
+/* Section About me */
+.bg-html {
+    background-color: #fb8500;
+}
+
+.bg-css {
+    background-color: #0278b3;
+}
+
+.bg-js {
+    background-color: #ffea00;
+}
+
+.bg-react {
+    background-color: #00e5e8;
+}
+
+.bg-angular {
+    background-color: #d00000;
+}
+
+.bg-react-native {
+    background-color: #00e5e8;
+}
+
+.bg-ionic {
+    background-color: #4361ee;
+}
+
+/* Services */
+.card-services {
+    
+}

@@ -5,44 +5,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Adolfo Reyes">
+    <meta name="keywords" content="Portafolio, Adolfo, Reyes, html, HTML, CSS, css, JavaScript">
+    <meta name="description" content="Portafolio web de Adolfo Reyes. Necesitas un sitio web para tu negocio, contáctame sin compromiso alguno.">
+    <meta name="copyright" content="Adolfo Reyes" />
     <title>A-Reyes</title>
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" /> -->
     <!-- Bootstrap 5.2.0 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Custom styles.css -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./src/css/styles.css">
+
 </head>
 
-<body class="body">
+<body class="dark">
     <!-- Section header -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-navbar">
+        <nav class="navbar navbar-expand-lg">
             <div class="container d-flex">
-                <a class="navbar-brand text-white align-items-center logo" href="#">MKTIC.Test</a>
+                <a id="logo" class="navbar-brand logo" href="#">
+                    <p class="box-sahdow-text">MKTIC</p>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
                     aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="">
+                        <ion-icon id="icon-menu" name="menu-outline" class="icon-menu"></ion-icon>
+                    </span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarContent">
                     <ul class="navbar-nav ms-auto mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link text-white active" href="#">Inicio</a>
+                            <a href="#home" class="nav-link text-white">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Acerca de mí</a>
+                            <a href="#about" class="nav-link text-white">Acerca de mí</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Servicios</a>
+                            <a href="#services" class="nav-link text-white" href="#">Servicios</a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link text-white" href="#">Portafolio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="#">Clientes</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Contacto</a>
+                            <a href="#contact" class="nav-link text-white" href="#">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -54,177 +63,309 @@
     <main class="container">
 
         <!-- Section Home -->
-        <div class="row d-flex align-items-center justify-content-center my-sm">
-            <div class="col-sm-12 col-md-12 col-lg-12">
-                <img src="./assets/developer.jpg" class="rounded-circle p-3" alt="Desarrollor web MKTIC.Test" />
+        <section class="home" id="home">
+            <div class="row d-flex align-items-center">
+                <div class="col-sm-12 col-md-6">
+                    <img src="./src/assets/developer.jpg" class="rounded-circle" alt="Adolfo Reyes" />
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <h1 class="title box-sahdow-text">ADOLFO REYES</h1>
+                    <p class="text-justify">No existe mejor lugar para exhibir tus ideas, negocios, servicios, etc., que no sea Internet. La programación es el intermediaro para lograr dicho fin. Te invito a que trabajemos de la mano para el PROYECTO que estas por desarrollar.</p>
+                </div>
             </div>
-            <div class="col-sm-12 col-md-12 col-lg-12">
-                <h1 class="text-center mt-sm-5">MKTIC</h1>
-                <p class="text-justify">Todo empieza por una gran idea para hacer magia. La programación es el resultado
-                    de
-                    hacer magia y mostrarla al mundo.</p>
-            </div>
-        </div>
+        </section>
 
         <!-- Section About me -->
-        <div class="row d-flex align-items-center my-sm">
-            <h2 class="text-center h2">Acerca de mi</h2>
-            <p class="text-justify p-0">Desarrollador web y de aplicaciones móviles.</p>
-            <div class="col-sm-6 col-md-6 col-lg-6 p-0 mb-1">
-                <div class="card" style="background-color: rgb(30, 185, 30); opacity: 0.5; padding: 12px 0px;">
-                    <p class="text-white m-0 ms-3 mb-sm-0 h3">Freelance:</p>
-                    <p class="text-white m-0 p-0 ms-3">Disponible</p>
+        <section class="about" id="about">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-sm-12 col-md-12">
+                    <h2 class="title-h2 box-sahdow-text">ACERCA DE MI</h2>
+                    <p class="text-justify">Desarrollador web y de aplicaciones móviles.</p>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="cards">
+                        <p class="title-cards">Freelance:</p>
+                        <p class="paragraph-cards">Disponible</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="cards">
+                        <p class="title-cards">Profesión:</p>
+                        <p class="paragraph-cards">Ing. Tecnologías de la Información y Comunicación</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="cards">
+                        <p class="title-cards">Correo electrónico:</p>
+                        <p class="paragraph-cards">mktic.test@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 p-0">
+                    <div class="cards">
+                        <p class="title-cards">Número celular:</p>
+                        <p class="paragraph-cards">789 110 2965</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 p-0 mb-1">
+                    <div class="cards">
+                        <p class="title-cards">Dirección:</p>
+                        <p class="paragraph-cards">Monterrey, Nuevo León</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 p-0 mb-1">
+                    <div class="cards">
+                        <p class="title-cards">Cotización</p>
+                        <p class="paragraph-cards">Disponible</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-6 col-lg-6 p-0 mb-1">
-                <div class="card" style="background-color: rgb(3, 143, 199); opacity: 0.5; padding: 12px 0px;">
-                    <p class="text-white m-0 ms-3 mb-sm-0 h3">Profesión:</p>
-                    <p class="text-white m-0 p-0 ms-3">Ing. Tecnologías de la Información y Comunicación</p>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-6 p-0 mb-1">
-                <div class="card" style="background-color: rgb(247, 145, 29); opacity: 0.5; padding: 12px 0px;">
-                    <p class="text-white m-0 ms-3 mb-sm-0 h3">Correo electrónico:</p>
-                    <p class="text-white m-0 p-0 ms-3">mktic.test@gmail.com</p>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-6 p-0 mb-1">
-                <div class="card" style="background-color: rgb(161, 172, 162); opacity: 0.5; padding: 12px 0px;">
-                    <p class="text-white m-0 ms-3 mb-sm-0 h3">Número celular:</p>
-                    <p class="text-white m-0 p-0 ms-3">789 110 2965</p>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-6 p-0 mb-1">
-                <div class="card" style="background-color: rgb(14, 11, 212); opacity: 0.5; padding: 12px 0px;">
-                    <p class="text-white m-0 ms-3 mb-sm-0 h3">Dirección:</p>
-                    <p class="text-white m-0 p-0 ms-3">Monterrey, Nuevo León</p>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-6 p-0 mb-1">
-                <div class="card" style="background-color: rgb(197, 23, 38); opacity: 0.5; padding: 12px 0px;">
-                    <p class="text-white m-0 ms-3 mb-sm-0 h3">Cotización</p>
-                    <p class="text-white m-0 p-0 ms-3">Disponible</p>
-                </div>
-            </div>
+        </section>
 
-            <h2 class="text-center h2 my-5">Habilidaes</h2>
-            <div class="col-sm-12 col-md-6 col-lg-12 p-0 mb-3">
-                <div class="d-flex align-items-center justify-content-between">
-                    <p>HTML5</p>
-                    <p>95%</p>
+        <!-- Section Skills -->
+        <section class="skills" id="skills">
+            <div class="row d-flex align-items-center justify-content-center">
+                <h2 class="title-h2 box-sahdow-text">HABILIDADES</h2>
+                <div class="col-sm-12 col-md-6 col-lg-6 mb">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <p class="text-justify">HTML5</p>
+                        <p class="text-justify">95%</p>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-html" role="progressbar" aria-label="Success example"
+                            style="width: 95%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
                 </div>
-                <div class="progress">
-                    <div class="progress-bar bg-html" role="progressbar" aria-label="Success example" style="width: 95%"
-                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="col-sm-12 col-md-6 col-lg-6 mb">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <p class="text-justify">CSS3</p>
+                        <p class="text-justify">75%</p>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-css" role="progressbar" aria-label="Success example"
+                            style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 mb">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <p class="text-justify">Javascript</p>
+                        <p class="text-justify">85%</p>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-js" role="progressbar" aria-label="Success example"
+                            style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 mb">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <p class="text-justify">TypeScript</p>
+                        <p class="text-justify">80%</p>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-css" role="progressbar" aria-label="Success example"
+                            style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 mb">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <p class="text-justify">Angular</p>
+                        <p class="text-justify">82%</p>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-angular" role="progressbar" aria-label="Success example"
+                            style="width: 82%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 mb">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <p class="text-justify">React</p>
+                        <p class="text-justify">90%</p>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-react" role="progressbar" aria-label="Success example"
+                            style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 mb">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <p class="text-justify">React Native</p>
+                        <p class="text-justify">80%</p>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-react" role="progressbar" aria-label="Success example"
+                            style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 mb">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <p class="text-justify">Ionic</p>
+                        <p class="text-justify">85%</p>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-css" role="progressbar" aria-label="Success example"
+                            style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 mb">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <p class="text-justify">NodeJS</p>
+                        <p class="text-justify">60%</p>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-node" role="progressbar" aria-label="Success example"
+                            style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 mb">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <p class="text-justify">SQL | MYSQL</p>
+                        <p class="text-justify">70%</p>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-sql" role="progressbar" aria-label="Success example"
+                            style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 mb">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <p class="text-justify">Firebase</p>
+                        <p class="text-justify">75%</p>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-js" role="progressbar" aria-label="Success example"
+                            style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 mb">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <p class="text-justify">Git | GitHub</p>
+                        <p class="text-justify">70%</p>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-html" role="progressbar" aria-label="Success example"
+                            style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-12 p-0 mb-3">
-                <div class="d-flex align-items-center justify-content-between">
-                    <p>CSS3</p>
-                    <p>65%</p>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar bg-css" role="progressbar" aria-label="Success example" style="width: 65%"
-                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-12 p-0 mb-3">
-                <div class="d-flex align-items-center justify-content-between">
-                    <p>Javascript</p>
-                    <p>85%</p>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar bg-js" role="progressbar" aria-label="Success example" style="width: 85%"
-                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-12 p-0 mb-3">
-                <div class="d-flex align-items-center justify-content-between">
-                    <p>React</p>
-                    <p>90%</p>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar bg-react" role="progressbar" aria-label="Success example"
-                        style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-12 p-0 mb-3">
-                <div class="d-flex align-items-center justify-content-between">
-                    <p>Angular</p>
-                    <p>82%</p>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar bg-angular" role="progressbar" aria-label="Success example"
-                        style="width: 82%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-12 p-0 mb-3">
-                <div class="d-flex align-items-center justify-content-between">
-                    <p>React Native</p>
-                    <p>80%</p>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar bg-react-native" role="progressbar" aria-label="Success example"
-                        style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-12 p-0 mb-3">
-                <div class="d-flex align-items-center justify-content-between">
-                    <p>Ionic</p>
-                    <p>85%</p>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar bg-ionic" role="progressbar" aria-label="Success example"
-                        style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </div>
-        </div>
+        </section>
 
         <!-- Section My services -->
-        <div class="row d-flex align-items-center my-sm">
-            <h2 class="text-center h2">Servicios</h2>
-            <div class="col-sm-12 col-md-6 col-lg-4 mb-2">
-                <div class="card card-services">
-                    <div class="rounded-circle mx-auto d-flex align-items-center justify-content-center" style="width: 90px; height: 90px; background-color: aliceblue;" >
-                        <ion-icon name="desktop-outline" class="p-3" style="font-size: 56px; color: #e98e06;"></ion-icon>
+        <section class="services" id="services">
+            <div class="row d-flex">
+                <h2 class="title-h2 box-sahdow-text">SERVICIOS</h2>
+                <div class="col-sm-12 col-md-6 col-lg-4 mb">
+                    <div class="cards">
+                        <div class="icon-content title">
+                            <ion-icon name="desktop-outline" class="icon-web">
+                            </ion-icon>
+                        </div>
+                        <p class="title-cards title">Desarrollo Web</p>
+                        <p class="paragraph-cards">Creación de landing page, páginas web dinámicas, ecommerce, blog,
+                            diseño responsivo para la máxima flexibilidad en los diferentes dispositivos (celular,
+                            tablet, laptop, escritorio).</p>
                     </div>
-                    <p class="text-center h3">Desarrollo web</p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 mb">
+                    <div class="cards">
+                        <div class="icon-content title">
+                            <ion-icon name="phone-portrait-outline" class="icon-movil">
+                            </ion-icon>
+                        </div>
+                        <p class="title-cards title">Desarrollo Móvil</p>
+                        <p class="paragraph-cards">Creación de aplicaciones multiplataforma (IOS y Android).</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 mb">
+                    <div class="cards">
+                        <div class="icon-content title">
+                            <ion-icon name="brush-outline" class="icon-pencil">
+                            </ion-icon>
+                        </div>
+                        <p class="title-cards title">Diseño Gráfico</p>
+                        <p class="paragraph-cards">Creación de prototipo de sitios web, diseño aplicaciones móvil, post
+                            para redes sociales, infografías, etc.</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 mb-2">
-                <div class="card card-services">
-                    <div class="row">
-                        <div class="col">
-                            <div class="rounded-circle mx-auto d-flex align-items-center justify-content-center" style="width: 90px; height: 90px; background-color: aliceblue;" >
-                                <ion-icon name="logo-android" class="p-3" style="font-size: 56px; color: #18d842;"></ion-icon>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="rounded-circle mx-auto d-flex align-items-center justify-content-center" style="width: 90px; height: 90px; background-color: aliceblue;" >
-                                <ion-icon name="logo-apple" class="p-3" style="font-size: 56px; color: #2d2e2e;"></ion-icon>
-                            </div>
-                        </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section class="contact" id="contact">
+            <div class="row d-flex align-items-center">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <h2 class="title-h2 box-sahdow-text">CONTACTO</h2>
+                    <P class="text-justify">Para mayor información, complete el siguiente formulario y en breve le responderemos.</P>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 mt">
+                    <div class="content-img-contact">
+                        <img src="./src/assets/writtenEmail.svg" class="img-contact" alt="Enviar email">
                     </div>
-                    <p class="text-center h3">Desarrollo de Aplicaciones móvil</p>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <form id="formSendEmail">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Nombre completo</label>
+                                    <input type="text" id="name" name="name" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Correo electrónico</label>
+                                    <input type="email" id="email" name="email" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="subject" class="form-label">Asunto</label>
+                                    <input type="text" id="subject" name="subject" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="description" class="form-label">Descripción</label>
+                                    <textarea type="text" id="description" name="description" class="form-control" rows="5"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group d-grid gap-2">
+                                    <button type="submit" class="btn btn-outline-primary">Enviar</button>
+                                </div>
+                            </div>
+                    </form>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 mb-2">
-                <div class="card card-services">
-                    <div class="rounded-circle mx-auto d-flex align-items-center justify-content-center" style="width: 90px; height: 90px; background-color: aliceblue;" >
-                        <ion-icon name="cloud-upload-outline" class="p-3" style="font-size: 56px; color: #0968e4;"></ion-icon>
-                    </div>
-                    <p class="text-center h3">Hosting</p>
-                </div>
+        </section>
+    </main>
+    <!-- Section Footer -->
+    <hr class="hr">
+    <footer class="container footer">
+        <h2 class="title-h2 box-sahdow-text mb">REDES SOCIALES</h2>
+        <div class="row d-flex align-items-center mb">
+            <div class="col text-center">
+                <ion-icon name="logo-facebook" class="icon-facebook"></ion-icon>
+            </div>
+            <div class="col text-center">
+                <ion-icon name="logo-whatsapp" class="icon-whatsapp"></ion-icon>
+            </div>
+            <div class="col text-center">
+                <ion-icon name="logo-twitter" class="icon-twitter"></ion-icon>
             </div>
         </div>
-
-    </main>
+        <p class="text-center">© 2022</p>
+        <p class="text-center">Derechos reservados.</p>
+        <p class="text-center">Adolfo Reyes.</p>
+    </footer>
     <!-- Script for ion-icons -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <!-- SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.33/dist/sweetalert2.all.min.js"></script>
     <!-- Scrip jquery for Bootstrap 5.2.0 -->
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./src/js/app.js"></script>
 </body>
 
 </html>

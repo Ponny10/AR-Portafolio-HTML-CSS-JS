@@ -1,0 +1,342 @@
+/* Import Font-Family */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap');
+
+/* Variables styles */
+:root {
+    --dark-color: #000814;
+    --white-color: #FFFFFF;
+    --card-color: #083377;
+    --html-color: #FF900D;
+    --css3-color: #3886FB;
+    --js-color: #F0DA10;
+    --angular-color: #AA1010;
+    --react-color: #12BBE0;
+    --nodejs-color: #15800C;
+    --sql-color: #083377;
+    --dark-rgb: 0, 8, 20;
+    --white-rgb: 255, 255, 255;
+}
+
+/* Reset styles default navigator */
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: var(--white-color);
+    color: var(--dark-color);
+}
+
+body.dark {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+}
+
+/* Styles globals */
+h1, h2, h3, p, a {
+    margin: 0%;
+    padding: 0%;
+}
+
+.mt {
+    margin-top: 24px;
+}
+
+.mb {
+    margin-bottom: 24px;
+}
+
+.box-sahdow {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
+}
+
+.box-sahdow-text {
+    text-shadow: 0px 2px 8px rgba(255, 255, 255, 0.33);
+}
+
+.title-h2 {
+    font-size: 30px;
+    font-weight: 900;
+    padding: 24px 0px;
+    text-align: center;
+}
+
+.text-justify {
+    font-size: 18px;
+    line-height: 1.7;
+    padding: 12px 18px;
+    text-align: justify;
+}
+
+.row,
+.col-sm-12 {
+    padding: 0% !important;
+}
+
+section[id] {
+    scroll-margin-top: 80px;
+}
+
+/* Styles Navbar */
+nav.navbar {
+    transition: all 0.5s ease;
+}
+nav.navbar.active {
+    background-color: rgba(var(--dark-rgb), 0.9);
+    box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.1);
+    position: fixed;
+    top: 0px;
+    padding: 0%;
+    width: 100%;
+}
+
+.nav-item:hover {
+    background-color: #fafafa;
+    transition: all 0.5s ease;
+    border-radius: 12px;
+}
+
+.nav-link:hover {
+    color: rgb(180, 16, 98) !important;
+    transition: all 0.5s ease;
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0%;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.logo {
+    color: var(--white-color);
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.icon-menu {
+    color: var(--white-color);
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+}
+
+/* Styles Home */
+.home {
+    padding-bottom: 48px;
+}
+
+.rounded-circle {
+    border-radius: 50% !important;
+    width: 100%;
+    padding: 18px;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+/* Styles About */
+.about {
+    padding-bottom: 48px;
+}
+.cards {
+    background-color: var(--card-color);
+    border-radius: 12px;
+    -webkit-box-shadow: 0 4px 12px 0px rgba(255, 255, 255, 0.2);
+    -moz-box-shadow: 0 4px 12px 0px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 12px 0px rgba(255, 255, 255, 0.2);
+    margin: 0px 18px 18px;
+    padding: 12px 0px;
+}
+
+.title-cards {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--white-color);
+    margin: 0px 16px;
+}
+
+.paragraph-cards {
+    font-size: 18px;
+    line-height: 1.7;
+    padding: 0px 18px;
+}
+
+/* Styles Skills */
+.skills {
+    margin-bottom: 48px;
+}
+.progress {
+    margin: 0px 18px;
+}
+.bg-html {
+    background-color: var(--html-color);
+}
+
+.bg-css {
+    background-color: var(--css3-color);
+}
+
+.bg-js {
+    background-color: var(--js-color);
+}
+
+.bg-react {
+    background-color: var(--react-color);
+}
+
+.bg-angular {
+    background-color: var(--angular-color);
+}
+
+.bg-node {
+    background-color: var(--nodejs-color);
+}
+
+.bg-sql {
+    background-color: var(--sql-color);
+}
+
+/* Styles Services */
+.services {
+    margin-bottom: 48px;
+}
+
+.icon-content {
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    display: flex;
+    height: 72px;
+    margin: 0px auto;
+    padding: 16px 12px;
+    width: 72px;
+}
+
+.icon-web {
+    color: var(--html-color);
+    height: 60px;
+    width: 60px;
+}
+
+.icon-movil {
+    color: var(--nodejs-color);
+    height: 60px;
+    width: 60px;
+}
+
+.icon-pencil {
+    color: var(--angular-color);
+    height: 60px;
+    width: 60px;
+}
+
+/* Services */
+.card-services {
+    padding: 12px;
+    border-radius: 24px !important;
+}
+
+/* Section Contact */
+.contact {
+    margin-bottom: 48px;
+}
+
+.form-group{
+    margin: 0px 18px 18px;
+}
+
+.content-img-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 18px;
+    margin-bottom: 48px;
+}
+
+.img-contact {
+    width: 70%;
+}
+
+/* Section Footer */
+.icon-facebook {
+    color: #0a4bcd;
+    height: 60px;
+    width: 60px;
+}
+
+.icon-whatsapp {
+    color: #25D366;
+    height: 60px;
+    width: 60px;
+}
+
+.icon-twitter {
+    color: #1DA1F2;
+    height: 60px;
+    width: 60px;
+}
+
+/* Separator */
+.hr {
+    background-color: var(--white-color);
+    height: 3px;
+    text-align: center;
+    width: 100% !important;
+    opacity: 70%;
+    box-sizing: border-box;
+}
+
+/* Section Footer */
+.footer {
+    margin-bottom: 24px;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .rounded-circle {
+        width: 60%;
+        margin: auto 20%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)  */
+@media (min-width: 768px) {
+    section[id] {
+        scroll-margin-top: 120px;
+    }
+    .home {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 85vh;
+    }
+    .rounded-circle {
+        width: 100%;
+        margin: 0% 0%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    section[id] {
+        scroll-margin-top: 144px;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) { ... } */
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+/* @media (min-width: 1400px) { ... }   */
